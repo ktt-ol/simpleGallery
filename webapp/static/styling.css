@@ -1,0 +1,164 @@
+/*
+ This file is part of sg - Simple Gallery
+Copyright (C) 2012 Holger Cremer
+
+sg - Simple Gallery is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+sg is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with sg.  If not, see <http://www.gnu.org/licenses/>.
+*/
+body, div, ul, ol, ul li, ol li, table, form, dl, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #DDDDDD;
+    color: #333333;
+    font-family: 'Lucida Sans','Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    color: #999999;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 40px;
+    margin: 0 0 25px;
+}
+h1 img {
+    padding-right: 50px;
+    width: 200px;
+    vertical-align: middle;
+}
+a {
+    color: #991100;
+    outline: medium none;
+    text-decoration: none;
+}
+img {
+	border:none;
+}
+a:visited {
+    color: #991100;
+}
+a:hover {
+    color: #CC3300;
+}
+.clear {
+    clear: both;
+}
+.shadow {
+	-moz-box-shadow: 6px 6px 5px #888;
+	-webkit-box-shadow: 6px 6px 5px #888;
+	box-shadow: 6px 6px 5px #888;
+}
+.round {
+	border-radius: 12px 12px 12px 12px;
+}
+p {
+    margin: 5px 0;
+}
+
+#backLink {
+	margin-bottom: 15px;
+}
+#backLink a {
+	background: white;
+	color: #991100;
+	padding: 2px 10px;
+}
+#backLink a:hover {
+	background: #991100;
+	color: white;
+}
+
+#breadcrumb {
+	float:left;
+}
+#tips {
+	float:right;
+}
+
+#indexwrapper {
+    margin: 20px 10px 10px;
+}
+
+#indexwrapper .panel {
+    background-color: #FFFFFF;
+    padding: 20px;
+    position: relative;
+}
+#description {
+	padding-left: 250px;
+	color:#999999;
+	font-size: 18px;
+}
+.grid {
+    font-size: 12px;
+    margin-top: 20px;
+/*     min-height: 300px; */
+	clear:both;
+}
+.grid a {
+	display: table-cell;
+    vertical-align: middle;
+}
+.grid div:hover {
+    background-color: #CCCCCC;
+}
+.grid .thumb {
+    border-radius: 6px 6px 6px 6px;
+    display: inline;
+    float: left;
+    margin: 0 5px 5px 0;
+    padding: 5px;
+    text-align: center;
+}
+.grid.image {
+	margin-top:40px;
+}
+#foldercontainer {
+	background-color: #eee;
+	border-radius: 12px 12px 12px 12px;
+	float: left;
+	margin:10px 0;
+   	padding: 5px 15px;
+   	min-width: 90%;
+}
+.grid.folder span {
+	display:block;
+	font-weight: bold;
+	margin-bottom:5px;
+}
+.footer {
+    color: #333333;
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+}
+
+/* view page styling */
+#view {
+	text-align: center;
+	background: black;
+    display: table;
+    height: 100%;
+    position: absolute;
+    width: 100%;	
+}
+#view a {
+	display: table-cell;
+	vertical-align: middle;	
+}
+#view img {
+	max-width: 100%;
+	max-height: 100%;
+}
