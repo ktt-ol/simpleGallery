@@ -107,9 +107,9 @@ p {
 /*     min-height: 300px; */
 	clear:both;
 }
-.grid a {
+.image a {
 	display: table-cell;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 .grid div:hover {
     background-color: #CCCCCC;
@@ -117,12 +117,13 @@ p {
 .grid .thumb {
     border-radius: 6px 6px 6px 6px;
     display: inline;
-    /*
     float: left;
-    */
     margin: 0 5px 5px 0;
-    padding: 5px;
+    padding:5px;
     text-align: center;
+}
+.grid.folder .thumb {
+	padding: 18px 12px;
 }
 .grid.image {
 	margin-top:40px;
@@ -132,8 +133,8 @@ p {
 	border-radius: 12px 12px 12px 12px;
 	float: left;
 	margin:10px 0;
-   	padding: 5px 15px;
-   	min-width: 90%;
+ 	padding: 5px 15px 20px 15px;
+ 	min-width: 90%;
 }
 .grid.folder span {
 	display:block;

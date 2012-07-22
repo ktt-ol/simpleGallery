@@ -33,7 +33,7 @@ along with sg.  If not, see <http://www.gnu.org/licenses/>.
 	height: <?= $this->size * 2/3 ?>px;
 	background-color: lightYellow;
 }
-.image .thumb, .grid.image a {
+.image .thumb, .grid.image a, .grid .thumb {
     width: <?= $this->size ?>px;
     height: <?= $this->size ?>px;
 }
