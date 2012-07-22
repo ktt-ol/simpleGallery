@@ -61,11 +61,6 @@ function createImage($sourceImageFile, $thumbnailFile, $size) {
 
 	$w = imagesx($img);
 	$h = imagesy($img);
-	# don't do anything if the image is already small
-	if ($w <= $size and $h <= $size) {
-		imagedestroy($img);
-		return $source;
-	}
 
 	# uncomment this if you need group writable files
 	#umask(0002);
