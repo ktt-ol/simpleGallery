@@ -72,7 +72,7 @@ if (isset($_GET["v"])) {
     $imageListForView = array();
     $subFoldersForView = array();
 
-    foreach (scandir($folderPath) as $file) if ($file !== '.' and $file !== '..') {
+    foreach (scandir($folderPath, 0) as $file) if ($file !== '.' and $file !== '..') {
         if (is_dir("$folderPath/$file")) {
             $subFolder = "$folderPath/$file";
             $folderData = array(
