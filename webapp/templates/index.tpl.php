@@ -111,7 +111,7 @@ along with sg.  If not, see <http://www.gnu.org/licenses/>.
 	</div>
 
 	<div class="footer">
-		<a href="http://blog.kreativitaet-trifft-technik.de/impressum/">Impressum</a><br />
+		<a href="http://www.kreativitaet-trifft-technik.de/impressum">Impressum</a><br />
 	</div>
 <!--
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
