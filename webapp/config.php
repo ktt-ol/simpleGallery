@@ -27,11 +27,6 @@ define('PREVIEW_SIZE', 1000);
 define('IMAGES_DIR', 'images');
 
 /**
- * All thumbnails and caches are created in this folder. The script needs write permissions in here.
- */
-define('DATA_DIR', 'data');
-
-/**
  * Enable this for a performance increase at a cost of memory. The file path information are cached in the session.
  * TODO: implement this feature...
  */

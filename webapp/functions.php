@@ -95,7 +95,7 @@ function createImage($sourceImageFile, $thumbnailFile, $size) {
 }
 
 function getSmallSizedImagePath($folderPath, $imageFile, $size) {
-    return sprintf("%s/%s/%d_%s", DATA_DIR, $folderPath, $size, $imageFile);
+	return sprintf("%s/.thumbs/%d_%s", $folderPath, $size, $imageFile);
 }
 
 function show404($msg = "Not found") {
@@ -162,9 +162,19 @@ function hasSupportedExtension($file) {
 	return ($ext === "jpg" || $ext === "jpeg" || $ext === "png");
 }
 
+function startsWith($haystack, $needle)
+{
+	$length = strlen($needle);
+	return (substr($haystack, 0, $length) === $needle);
+}
+
+function validFolderOrFile($pathElement) {
+	return !startsWith($pathElement, ".");
+}
+
 function getFirstImage($dir)
 {
-	foreach (scandir($dir) as $subFile) if ($subFile !== '.' and $subFile !== '..') {
+	foreach (scandir($dir) as $subFile) if (validFolderOrFile($subFile)) {
 		if (hasSupportedExtension($subFile)) {
 			return $subFile;
 		}
